@@ -53,7 +53,8 @@ local run_on_start_up = {
    "picom --experimental-backends --config " .. theme_config_dir .. "picom.conf",
    "redshift",
    "unclutter",
-   "nm-applet"
+   "nm-applet",
+   "xss-lock -- " .. apps.lock
 }
 
 
@@ -66,7 +67,6 @@ require("components.notifications")
 
 -- Import refresh monitors
 require("awful.remote")
-require("components.screenful")
 
 -- Run all the apps listed in run_on_start_up
 for _, app in ipairs(run_on_start_up) do

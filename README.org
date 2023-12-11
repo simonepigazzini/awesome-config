@@ -2,3 +2,9 @@
 
 Inspired by WillPower3309 [[https://github.com/WillPower3309/awesome-dotfiles][awesome-dotfiles]].
 
+** Handling multiple monitor configuration
+Use [[https://github.com/phillipberndt/autorandr][autorandr]] to handle multiple monitor configurations. The `default` config is set to aways go back to
+laptop display only.
+
+** Lock session
+Use `xss-lock` and `i3lock`. `xss-lock` is started by awesome at startup. `i3lock` is called by either `xss-lock` or manually with a shortcut.
